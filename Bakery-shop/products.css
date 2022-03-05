@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand";
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background: rgb(113, 223, 231);
+    background-image: url("images/pastel-grungy-concrete-wall-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+
+.navbar{
+    z-index: 10;
+    width: 100%;
+    background: rgb(0, 157, 174);
+    border: 6px solid black;
+    position: fixed;
+    padding: 4px;
+
+}
+
+.navbar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.header{
+    height: 160px;
+    width: 160px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(113, 223, 231);
+    border-radius: 50%;
+    border: 8px double black;
+}
+
+.title{
+    font-family: "Quicksand";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-family: "Quicksand";
+    font-size: 22px;
+    margin-top: -16px;
+    color:rgb(255, 230, 82);
+    border-bottom: 4px solid rgb(255, 230, 82);
+}
+
+.menu{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+}
+.menu a{
+    font-family: "Quicksand";
+    font-weight: bolder;
+    font-size: 16px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: rgb(194, 255, 249);
+}
+
+.main-container{
+    z-index: 1;
+    padding-bottom: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content-container{
+    margin-top: 120px;
+    height: 50%;
+    width: 50%;
+    border: 8px double black;
+    background: rgb(113, 223, 231);
+    border-radius: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.menu-card{
+    height: 50%;
+    width: 35%;
+    background-color: black;
+    border-radius: 20px;
+    border:8px double white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-card h2{
+    color: white;
+    text-align: center;
+    position:relative;
+    text-decoration: underline;
+    top:-20px;
+}
+
+.menu-card p{
+    color: white;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is the footer */
+footer{
+    z-index: 10;
+    width: 100%;
+    height: 40px;
+    background: rgb(0, 157, 174);
+    border: 6px solid black;
+    padding: 4px;
+    position:fixed;
+    bottom: 0;
+}
+
+footer ul{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+}
+
+footer ul li{
+    margin-left: 40px;
+    font-family: Quicksand;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+@media (max-width:640px){
+    .header{
+        height: 80px;
+        width: 200px;
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        background: rgb(113, 223, 231);
+        border-radius: 20px;
+        border: 8px double black;
+    }
+    .content-container{
+        width: 80%;
+    }
+
+    .menu a{
+
+        font-size: 12px;
+    }
+
+    .content-container{
+
+        margin-left: 0px;
+    }
+
+    .menu-card p{
+        color: white;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}
